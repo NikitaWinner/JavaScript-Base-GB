@@ -29,6 +29,11 @@
 -->
   <script>
     "use strict";
+    let userNumber = prompt('Введите число: ')
+    let hundreds = Math.trunc(userNumber % 1000 / 100)
+    let tens = Math.trunc(userNumber % 100 / 10)
+    let units = userNumber % 10
+    console.log(`В числе ${userNumber} количество сотен: ${hundreds}, десятков: ${tens}, единиц: ${units}`)
 
   </script>
 </body>
